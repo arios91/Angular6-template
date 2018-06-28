@@ -1,5 +1,7 @@
+import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './/app-routing.module';
+import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 
 
@@ -9,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SeoService } from './services/seo.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactService } from './services/contact.service';
 
 
 @NgModule({
@@ -20,10 +23,13 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
+    FlashMessagesModule.forRoot()
   ],
   providers: [
-    SeoService
+    SeoService,
+    ContactService
   ],
   bootstrap: [AppComponent]
 })

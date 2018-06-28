@@ -8,20 +8,40 @@ export class SeoService {
 
   generateTags(config){
     config = {
-      title: '',
-      description: '',
-      url: '',
+      title: 'Best McAllen Web Design | Professional Web Design and SEO',
+      description: 'Best McAllen Web Designer - Professional and affordable web designer with a goal to help your local business get noticed. '
+      + 'We offer attractive mobile-friendly websites and search engine optimization packages. '
+      + 'Give us a change to make you money!',
+      url: 'https://www.ar-webdesigns.com',
       author: 'AR Web Designs',
       language: 'EN',
       region: 'US-TX',
-      placename: '',
-      position: '',
-      ICBM: '',
+      placename: 'McAllen',
+      position: '26.203407; -98.230012',
+      ICBM: '26.203407, -98.230012',
       type: 'website',
       imagePath: '',
-      keywords: ', '
-        + ', '
-        + ', '
+      keywords:
+          'Web Development, '
+        + 'Web Developer, '
+        + 'Website Development, '
+        + 'Website Developer, '
+        + 'Web Design, '
+        + 'Web Designer, '
+        + 'Web Development in McAllen, '
+        + 'Web Development in Mission, '
+        + 'Web Development in Edinburg, '
+        + 'Web Developmer in McAllen, '
+        + 'Web Developmer in Mission, '
+        + 'Web Developmer in Edinburg, '
+        + 'Web Design in McAllen, '
+        + 'Web Design in Mission, '
+        + 'Web Design in Edinburg, '
+        + 'Web Designer in McAllen, '
+        + 'Web Designer in Mission, '
+        + 'Web Designer in Edinburg, '
+        + 'Freelance Web Developer, '
+        + 'Professional Web Development, '
         ,
       ...config
     }

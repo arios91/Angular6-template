@@ -12,6 +12,7 @@ import { SeoService } from './services/seo.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactService } from './services/contact.service';
+import { QuotesComponent } from './components/quotes/quotes.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ContactService } from './services/contact.service';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,

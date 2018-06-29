@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-blue{
+    /* background-color: #008AC9; */
+    background-color: #444444;
+    border-color: #008AC9;
+    color: #fff !important;
+    cursor: pointer;
+}
+.btn-blue:focus{
+    background-color:#008aff;
+}
+.btn-blue:hover{
+    background-color:#008aff;
+}
+
+.header-fixed{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}

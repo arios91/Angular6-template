@@ -23,6 +23,7 @@
   <meta name="og:url"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
@@ -31,4 +32,48 @@
     Loading Site....
   </app-root>
 </body>
+
+<script>
+    // Animate Smooth Scroll
+    $('#homeLink').on('click', function() {
+      const target = $('#home').position().top;
+  
+      $('html, body').animate(
+        {
+          scrollTop: target
+        },
+        900
+      );
+    });
+    $('#aboutLink').on('click', function() {
+      const target = $('#about').position().top;
+  
+      $('html, body').animate(
+        {
+          scrollTop: target
+        },
+        900
+      );
+    });
+    $('#ourWorkLink').on('click', function() {
+      const target = $('#ourWork').position().top;
+  
+      $('html, body').animate(
+        {
+          scrollTop: target
+        },
+        900
+      );
+    });
+    $('#blogLink').on('click', function() {
+      const target = $('#blog').position().top;
+  
+      $('html, body').animate(
+        {
+          scrollTop: target
+        },
+        900
+      );
+    });
+  </script>
 </html>

@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.roboto{
+    font-family: 'Roboto', sans-serif !important;
+}
+.openSans{
+    font-family: 'Open Sans Condensed', sans-serif !important;
+
+}
+
 .btn-blue{
     /* background-color: #008AC9; */
     background-color: #444444;
@@ -19,4 +27,27 @@
     top: 0;
     left: 0;
     z-index: 9;
+}
+.sticky-header{
+    background-color: rgba(4,4,4,0.6);
+    border-bottom-color: #008aff;
+    transition: all 0.5s ease-in-out;
+}
+
+.f-45{
+    font-size: 45px;
+}
+
+.t-blue{
+    color: #008AC9;
+}
+.t-orange{
+    color: #DF740C;
+}
+
+.bg-grey{
+    background: #333;
+}
+.bg-cream{
+    background: #F8FFEF;
 }

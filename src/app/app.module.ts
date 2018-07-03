@@ -12,7 +12,7 @@ import { SeoService } from './services/seo.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactService } from './services/contact.service';
-import { QuotesComponent } from './components/quotes/quotes.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { QuotesComponent } from './components/quotes/quotes.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    QuotesComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,

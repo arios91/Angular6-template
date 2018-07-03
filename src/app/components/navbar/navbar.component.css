@@ -1,5 +1,23 @@
 .navbar-brand{
     color:#008AC9;
     font-size: 2.5rem;
-    font-family: roboto-slab;
+}
+.mobile-navbar-brand{
+    display: none;
+}
+.navbar-nav{
+    font-size: 1.45rem;
+}
+.btn-blue{
+    font-size: 1.45rem;
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand{
+        display: none;
+    }   
+    .mobile-navbar-brand{
+        display: inline-block;
+        font-size: 2.5rem;
+    }   
 }

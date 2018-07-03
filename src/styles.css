@@ -9,7 +9,8 @@
 
 .btn-blue{
     /* background-color: #008AC9; */
-    background-color: #444444;
+    /* background-color: #444444; */
+    background-color: #008AC9;
     border-color: #008AC9;
     color: #fff !important;
     cursor: pointer;
@@ -44,10 +45,19 @@
 .t-orange{
     color: #DF740C;
 }
+.t-white{
+    color: #fff;
+}
 
 .bg-grey{
     background: #333;
 }
 .bg-cream{
     background: #F8FFEF;
+}
+.f-20{
+    font-size: 20px;
+}
+.f-18{
+    font-size: 18px;
 }

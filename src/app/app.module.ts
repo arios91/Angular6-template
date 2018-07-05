@@ -1,6 +1,8 @@
 import { FlashMessagesModule, FlashMessagesService } from 'angular2-flash-messages';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './/app-routing.module';
+import { TextMaskModule } from 'angular2-text-mask';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 
@@ -26,7 +28,9 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpModule,
+    TextMaskModule,
     FlashMessagesModule.forRoot()
   ],
   providers: [

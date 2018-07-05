@@ -48,6 +48,9 @@
 .t-white{
     color: #fff;
 }
+.t-grey{
+    color: #444;
+}
 
 .bg-grey{
     background: #333;
@@ -60,4 +63,8 @@
 }
 .f-18{
     font-size: 18px;
+}
+
+.w-85{
+    width: 85% !important;
 }

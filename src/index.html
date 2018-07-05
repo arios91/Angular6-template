@@ -52,48 +52,47 @@
       $header.removeClass('sticky-header');
     }
   });
+
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
   
   // Animate Smooth Scroll
   $('#homeLink').on('click', function() {
-    const target = $('#home').position().top;
-
-    $('html, body').animate(
-      {
-        scrollTop: target
-      },
-      900
-    );
+    scrollTo('#home');
   });
   $('#aboutLink').on('click', function() {
-    const target = $('#about').position().top;
-
-    $('html, body').animate(
-      {
-        scrollTop: target
-      },
-      900
-    );
+    scrollTo('#about');
   });
   $('#portfolioLink').on('click', function() {
-    const target = $('#portfolio').position().top;
+    scrollTo('#portfolio');
+  });
+  $('#servicesLink').on('click', function() {
+    scrollTo('#services');
+  });
+  $('#footerHomeLink').on('click', function() {
+    scrollTo('#home');
+  });
+  $('#footerAboutLink').on('click', function() {
+    scrollTo('#about');
+  });
+  $('#footerServicesLink').on('click', function() {
+    scrollTo('#services');
+  });
+  $('#footerPortfolioLink').on('click', function() {
+    scrollTo('#portfolio');
+  });
 
+  
+  function scrollTo(targetId){
+    const target = $(targetId).position().top;
     $('html, body').animate(
       {
-        scrollTop: target
+        scrollTop: target - 85
       },
       900
     );
-  });
-  $('#blogLink').on('click', function() {
-    const target = $('#blog').position().top;
-
-    $('html, body').animate(
-      {
-        scrollTop: target
-      },
-      900
-    );
-  });
+  }
 
     
   </script>

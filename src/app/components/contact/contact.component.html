@@ -1,3 +1,117 @@
-<div class="container bg-grey">
-  Contact Works
+<div class="row">
+  <div id="blankRow" style="height:90px;" class="col-12 bg-grey t-white">
+  </div>
+</div>
+<div id="testDiv"  class="responsiveBg" class="responsiveHeight" style="background-image: url('../../../assets/images/bg-2.png')">
+  <div class="container" style="border: 1px solid black; background: #fffc; height: 100%;">
+    <div class="row" style="height: 100%;">
+      <div class="col-12 text-center">
+          <br/>
+    </div>
+    <div class="col-12">
+        <div class="text-center t-blue" style="font-size: 2rem; font-weight: bold;">
+            Let's Make Something Great!
+        </div>
+        <div class="text-center" style="font-size: 1.25rem">
+            Let us know about your project, we'll get back to you as soon as possible.
+        </div>
+          <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="mb-1">
+            <div class="row">
+              <div class="form-group col-lg-6 col-sm-12">
+                  <input type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      name="cName"
+                      #cName="ngModel"
+                      [ngClass]="{'is-invalid':cName.errors && cName.touched}"
+                      [(ngModel)]="customerName"
+                      minlength="2" required>
+                  <div [hidden]="!cName.errors?.required"
+                      class="invalid-feedback">
+                      We need your name to get back to you.
+                  </div>
+                  <div [hidden]="!cName.errors?.minlength"
+                      class="invalid-feedback">
+                      We need your name to get back to you.
+                  </div>
+              </div>
+  
+              <div class="form-group col-lg-6 col-sm-12">
+                  <input type="cEmail"
+                      class="form-control"
+                      placeholder="Email Address"
+                      name="cEmail"
+                      #cEmail="ngModel"
+                      [ngClass]="{'is-invalid':cEmail.errors && cEmail.touched}"
+                      [(ngModel)]="customerEmail"
+                      pattern="\S+@\S+"
+                      required>
+                  <div [hidden]="!cEmail.errors?.required"
+                      class="invalid-feedback">
+                      Email required.
+                  </div>
+                  <div [hidden]="!cEmail.errors?.pattern"
+                      class="invalid-feedback">
+                      Invalid Email.
+                  </div>
+              </div>
+              
+              <div class="form-group col-lg-6 col-sm-12">
+                  <input type="text"
+                      class="form-control"
+                      name="cPhone"
+                      placeholder="Phone Number"
+                      #cPhone="ngModel"
+                      [ngClass]="{'is-invalid':cPhone.errors && cPhone.touched}"
+                      [(ngModel)]="customerPhone"
+                      placeholder="(123) 456-7890"
+                      [textMask]="{mask:phoneMask}"
+                      pattern="\(\d{3}\) \d{3}-\d{4}"
+                      required>
+                  <div [hidden]="!cPhone.errors?.required"
+                      class="invalid-feedback">
+                      Phone number required.
+                  </div>
+              </div>
+  
+              <div class="form-group col-lg-6 col-sm-12">
+                  <input type="text"
+                      class="form-control"
+                      placeholder="Company Name"
+                      name="ccName"
+                      #cName="ngModel"
+                      [(ngModel)]="customerCompany">
+              </div>
+  
+              <div class="form-group col-lg-12">
+                  <textarea
+                      style="height: 150px"
+                      class="form-control"
+                      name="instructions"
+                      placeholder="Information about your project"
+                      #instructions="ngModel"
+                      [(ngModel)]="customerQuestion"
+                      maxlength="300"
+                      required>
+                  </textarea>
+                  <div [hidden]="!instructions.errors?.maxLength"
+                      class="invalid-feedback">
+                      Inquiry must be under 300 characters
+                  </div>
+              </div>
+            </div>
+  
+  
+  
+  
+              <flash-messages></flash-messages>
+              <button id="customButton"
+                  class="btn btn-blue btn-block submitButton">
+                  Submit
+              </button>
+          </form>
+      </div>
+      
+    </div>
+  </div>
 </div>

@@ -1,5 +1,11 @@
-<div class="wrapper openSans">
+  
+<div id="container" class="openSans body">
   <app-navbar class="header-fixed"></app-navbar>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
+  
+  <div id="body" class="wrapper body">
+    <router-outlet class="body"></router-outlet>
+  </div>
+  
+  <app-footer id="footer" class="footer openSans"></app-footer>
 </div>
+

@@ -1,0 +1,14 @@
+.responsiveHeight{
+    height: 780px;
+}
+@media (max-width: 575.98px) {
+    .responsiveHeight{
+        height: 780px;
+    }
+    .responsiveBg{
+        background: #444 !important;
+    }
+    .responsiveText{
+        font-weight: normal !important;
+    }
+}

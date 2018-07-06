@@ -4,6 +4,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { TextMaskModule } from 'angular2-text-mask';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { GalleriaModule } from 'primeng/galleria';
 import { NgModule } from '@angular/core';
 
 
@@ -31,7 +32,8 @@ import { ContactComponent } from './components/contact/contact.component';
     FormsModule,
     HttpModule,
     TextMaskModule,
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    GalleriaModule
   ],
   providers: [
     SeoService,

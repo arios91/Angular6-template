@@ -6,18 +6,18 @@
     display: none;
 }
 .navbar-nav{
-    font-size: 1.45rem;
+    font-size: 1.8rem;
 }
 .btn-blue{
     font-size: 1.45rem;
 }
 
 @media (max-width: 575.98px) {
-    .navbar-brand{
-        display: none;
-    }   
+    /* .navbar-brand{
+        width: 60% !important;
+    }    */
     .mobile-navbar-brand{
         display: inline-block;
         font-size: 2.5rem;
-    }   
+    }
 }

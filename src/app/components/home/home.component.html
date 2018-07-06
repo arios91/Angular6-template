@@ -1,21 +1,54 @@
-<div id="home" class="carousel slide" data-ride="carousel">
+<!-- <div id="home" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100" src="../../../assets/images/header.jpg" height="650"alt="First slide">
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="row text-center" style="margin: 0px;">
+  <div id="home" class="col-12" style="height: 650px; background-image: url('../../../assets/images/header.jpg')">
+    <div class="col-12" style="height: 110px">
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active t-white">
+            Test slide
+          </div>
+          <div class="carousel-item t-white">
+            Test Slide 2
+          </div>
+          <div class="carousel-item t-white">
+            Test Slide 3
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </div>
 
   <div id="about" class="col-lg-6 col-sm-12 bg-grey">
-    <div class="f-45 t-blue">
+    <div class="col-12 divHeader t-blue">
       About Us
+    </div>
+    <div class="col-12 t-white aboutUsText">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae impedit consequatur nobis molestias, harum odit iure sint, obcaecati necessitatibus labore ratione voluptate deleniti, in maiores accusamus repellendus sunt voluptatibus asperiores ea iusto explicabo quibusdam iste rerum vel! Placeat non saepe quae, sapiente obcaecati nisi enim magnam debitis nesciunt, similique exercitationem.
     </div>
   </div>
 
   <div id="services" class="col-lg-6 col-sm-12 t-orange bg-cream align-middle">
-    <div class="f-45 t-orange">
+    <div class="divHeader t-orange">
       Services
     </div>
 
@@ -24,8 +57,13 @@
         <img src="../../../assets/icons/mobile.png" alt="mobile first icon" class="w-85">
       </div>
       <div class="col-10 text-left">
-        <span style="font-size: 22px; font-weight: bold;">Mobile-First Websites</span>
+        <span class="subHeader">
+          Mobile-First Websites
+        </span>
         <br/>
+        <span class="serviceDetails">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae qui quasi totam quam dolorum quia temporibus magnam aliquid veniam facere!
+        </span>
       </div>
     </div>
 
@@ -36,8 +74,13 @@
         <img src="../../../assets/icons/search.png" alt="search engine Optimization icon" class="w-85">
       </div>
       <div class="col-10 text-left">
-        <span style="font-size: 22px; font-weight: bold;">Search Engine Optimization</span><br/>
-        details
+        <span class="subHeader">
+          Search Engine Optimization
+        </span>
+        <br/>
+        <span class="serviceDetails">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae qui quasi totam quam dolorum quia temporibus magnam aliquid veniam facere!
+        </span>
       </div>
     </div>
       
@@ -48,8 +91,13 @@
           <img src="../../../assets/icons/maintenance.png" alt="maintenance icon" class="w-85">
       </div>
       <div class="col-10 text-left">
-        <span style="font-size: 22px; font-weight: bold;">Ongoing Maintenance</span><br/>
-          details
+        <span class="subHeader">
+          Ongoing Maintenance
+        </span>
+        <br/>
+        <span class="serviceDetails">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae qui quasi totam quam dolorum quia temporibus magnam aliquid veniam facere!
+        </span>
       </div>
     </div>
   </div>
@@ -58,8 +106,27 @@
 
 <div id="portfolio" class="row text-center" style="margin: 0px;">
   <div class="col">
-      <div class="f-45">
+      <div class="divHeader">
         Portfolio
       </div>
+      <div class="container col-12">
+          <p-galleria [images]="images"
+            panelWidth="90%"
+            frameWidth="100%"
+            panelHeight="700"
+            effectDuration=2000></p-galleria>
+      </div>
+      <!-- <div class="container respContainer col-12 row">
+        <div class="col-12 col-lg-1">
+        </div>
+        <div class="col-12 col-lg-5">
+          <img src="../../../assets/images/petalosArteScreenshot.png" alt="Petalos y Arte Flower Shop Screenshot" style="width: 100%;">
+        </div>
+        <div class="col-12 col-lg-5">
+          col 2
+        </div>
+        <div class="col-12 col-lg-1">
+        </div>
+      </div> -->
+    </div>
   </div>
-</div>

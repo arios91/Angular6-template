@@ -36,10 +36,6 @@ export class ContactComponent implements OnInit {
       });
     }else{
       this.contact.sendContactEmail(this.customerEmail, this.buildPlainTextEmail(), this.buildContactEmail());
-      this.customerName = '';
-      this.customerEmail = '';
-      this.customerPhone = '';
-      this.customerQuestion = '';
     }
   }
 

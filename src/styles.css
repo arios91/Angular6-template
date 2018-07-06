@@ -35,15 +35,41 @@
     transition: all 0.5s ease-in-out;
 }
 
-.f-45{
-    font-size: 45px;
+
+.navLinks{
+    font-size: 1.8rem;
+}
+
+.aboutUsText{
+    padding: 2rem 8rem;
+    font-size: 1.5rem;
+}
+.divHeader{
+    font-size: 3.5rem;
+}
+
+.subHeader{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.serviceDetails{
+    font-size: 1.4rem;
+}
+
+.footerLinks{
+    font-size: 1.5rem;
+}
+
+.footerEmailLink{
+    font-size: 1.25rem;
 }
 
 .t-blue{
     color: #008AC9;
 }
 .t-orange{
-    color: #DF740C;
+    color: #FE6501;
 }
 .t-white{
     color: #fff;
@@ -57,12 +83,6 @@
 }
 .bg-cream{
     background: #F8FFEF;
-}
-.f-20{
-    font-size: 20px;
-}
-.f-18{
-    font-size: 18px;
 }
 
 .w-85{

@@ -1,0 +1,11 @@
+@media (max-width: 575.98px) {
+    .serviceDetails{
+        font-size: 1.15rem;
+    }
+    .aboutUsText{
+        font-size: 1.25rem;
+    }
+    .respContainer{
+        margin: 0;
+    }
+}

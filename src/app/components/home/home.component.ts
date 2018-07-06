@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '../../services/seo.service';
 import { ContactService } from '../../services/contact.service';
+import { GalleriaModule } from 'primeng/galleria';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,8 @@ import { ContactService } from '../../services/contact.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  images: any[];
 
   constructor(
     private seoService: SeoService,
@@ -17,6 +20,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.seoService.generateTags({
     })
+    this.images = [];
+    this.images.push({source:'assets/images/petalosArteScreenshot.png', alt:'Petalos y Arte Flower Shop Screenshot', title:'Petalos y Arte Flower Shop'});
+    // this.images.push({source:'assets/images/galleria4.jpg', alt:'Description for Image 2', title:'Title 2'});
+    // this.images.push({source:'assets/images/galleria5.jpg', alt:'Description for Image 3', title:'Title 3'});
   }
 
   testClick(){

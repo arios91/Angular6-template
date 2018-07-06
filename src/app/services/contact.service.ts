@@ -21,7 +21,7 @@ export class ContactService {
     },)
     .subscribe(resp => {
       if(resp.status == 200){
-        this.flashMessage.show("Thank you for your inquiry! We'll get back to you shortlye.", {
+        this.flashMessage.show("Thank you for your inquiry! We'll get back to you shortly.", {
             cssClass: 'alert-success', timeout: 10000
         });
       }

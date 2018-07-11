@@ -35,6 +35,18 @@
     transition: all 0.5s ease-in-out;
 }
 
+.ui-panel-images{
+    width: 100%;
+    height: 650px;
+    cursor: pointer;
+}
+.ui-panel-images:focus, .ui-panel-images:hover{
+    filter: blur(4px);
+    transition: all 0.4s ease-in-out;
+}
+.ui-galleria-caption{
+    width: 100% !important;
+}
 
 .navLinks{
     font-size: 1.8rem;
@@ -87,4 +99,11 @@
 
 .w-85{
     width: 85% !important;
+}
+
+/* small devices */
+@media (max-width: 575.98px) {
+    .ui-galleria-caption{
+        font-size: 0.8rem !important;
+    }
 }

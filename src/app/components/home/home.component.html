@@ -43,7 +43,7 @@
       About Us
     </div>
     <div class="col-12 t-white aboutUsText">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae impedit consequatur nobis molestias, harum odit iure sint, obcaecati necessitatibus labore ratione voluptate deleniti, in maiores accusamus repellendus sunt voluptatibus asperiores ea iusto explicabo quibusdam iste rerum vel! Placeat non saepe quae, sapiente obcaecati nisi enim magnam debitis nesciunt, similique exercitationem.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem exercitationem eligendi placeat amet. Maiores iusto repellat doloribus mollitia ea necessitatibus perspiciatis numquam voluptates quibusdam, repudiandae in modi ipsum quo sit!
     </div>
   </div>
 
@@ -102,31 +102,39 @@
     </div>
   </div>
 
-</div>
+  <div class="col-lg-2">
 
-<div id="portfolio" class="row text-center" style="margin: 0px;">
-  <div class="col">
+  </div>
+  <div class="col-lg-8">
       <div class="divHeader">
         Portfolio
       </div>
-      <div class="container col-12">
-          <p-galleria [images]="images"
-            panelWidth="90%"
-            frameWidth="100%"
-            panelHeight="700"
-            effectDuration=2000></p-galleria>
+        <p-galleria
+          id="customerG"
+          [images]="images"
+          styleClass="myPanel"
+          panelWidth="100%"
+          frameWidth="100%"
+          panelHeight="735"
+          (onImageClicked)="testFunction($event.index)"
+          effectDuration=2000>
+        </p-galleria>
+  </div>
+  <div class="col-lg-2">
+
+  </div>
+</div>
+<div class="backdrop" [ngStyle]="{'display':modalDisplay}"></div>
+<div class="modal" id="exampleModal" [ngStyle]="{'display':modalDisplay}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          Visit {{redirectPageName}}?
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-secondary" (click)="closeModal()" routerLink="/">Cancel</button>
+          <button type="button" class="btn btn-primary" (click)="redirect()">Visit Page</button>
+        </div>
       </div>
-      <!-- <div class="container respContainer col-12 row">
-        <div class="col-12 col-lg-1">
-        </div>
-        <div class="col-12 col-lg-5">
-          <img src="../../../assets/images/petalosArteScreenshot.png" alt="Petalos y Arte Flower Shop Screenshot" style="width: 100%;">
-        </div>
-        <div class="col-12 col-lg-5">
-          col 2
-        </div>
-        <div class="col-12 col-lg-1">
-        </div>
-      </div> -->
     </div>
   </div>

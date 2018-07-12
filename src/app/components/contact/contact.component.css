@@ -1,6 +1,10 @@
 .responsiveHeight{
     height: 780px;
 }
+
+.header-fixed{
+    background: red !important;
+}
 @media (max-width: 575.98px) {
     .responsiveHeight{
         height: 780px;

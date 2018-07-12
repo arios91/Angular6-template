@@ -47,14 +47,28 @@
 
     if($scrollTop > 1) {
       $header.addClass('sticky-header');
+    }
+    else {
+      if(window.location.pathname != '/contact'){
+        console.log('removing sticky');
+        $header.removeClass('sticky-header');
       }
-      else {
-      $header.removeClass('sticky-header');
     }
   });
-
+  
+  $( document ).ready(function() {
+    console.log(window.location.pathname);
+    if(window.location.pathname === '/contact'){
+      $header.addClass('sticky-header');
+    }
+  });
+  
   $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
+  });
+  $('.navbar-nav>li>button').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    $header.addClass('sticky-header');
   });
   
   // Animate Smooth Scroll
@@ -88,7 +102,7 @@
     const target = $(targetId).position().top;
     $('html, body').animate(
       {
-        scrollTop: target - 85
+        scrollTop: target - 110
       },
       900
     );

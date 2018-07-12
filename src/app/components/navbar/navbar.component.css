@@ -8,9 +8,6 @@
 .btn-blue{
     font-size: 1.45rem;
 }
-@media (min-width: 768px) {
-
-}
 /* small devices */
 @media (max-width: 575.98px) {
     .navbar-brand{
@@ -19,5 +16,6 @@
     }
     .navbar-nav{
         text-align: right;
+        color:#008AC9;
     }
 }

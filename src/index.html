@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AR Web Designs</title>
+  <title>Replace Title</title>
   <base href="/">
 
   <meta name="title">
@@ -23,9 +23,6 @@
   <meta name="og:url"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -37,98 +34,5 @@
 </body>
 
 <script>
-  var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-  //sticky header with responsive background
-  var $header = $('.header-fixed'),
-      $headerTop = $header.offset().top,
-      $headerHeight = $header.innerHeight(),
-      $wrapper = $('#wrapper');
-
-  $(window).scroll(function () {
-    var $scrollTop = $(window).scrollTop();
-
-    if($scrollTop > 1) {
-      $header.addClass('sticky-header');
-    }
-    else {
-      if(window.location.pathname != '/contact'){
-        $header.removeClass('sticky-header');
-      }
-    }
-  });
-  
-  $( document ).ready(function() {
-    if(window.location.pathname === '/contact'){
-      $header.addClass('sticky-header');
-    }
-  });
-  
-  $('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-  });
-  $('.navbar-nav>li>button').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-    $header.addClass('sticky-header');
-  });
-  
-  // Animate Smooth Scroll
-  $('#homeLink').on('click', function() {
-    scrollTo('#home');
-  });
-  $('#aboutLink').on('click', function() {
-    scrollTo('#about');
-  });
-  $('#portfolioLink').on('click', function() {
-    scrollTo('#portfolio');
-  });
-  $('#pLink2').on('click', function() {
-    scrollTo('#portfolio');
-  });
-  $('#servicesLink').on('click', function() {
-    scrollTo('#services');
-  });
-  $('#footerHomeLink').on('click', function() {
-    scrollTo('#home');
-  });
-  $('#footerAboutLink').on('click', function() {
-    scrollTo('#about');
-  });
-  $('#footerServicesLink').on('click', function() {
-    scrollTo('#services');
-  });
-  $('#footerPortfolioLink').on('click', function() {
-    scrollTo('#portfolio');
-  });
-  $('#startButton').on('click', function() {
-    $header.addClass('sticky-header');
-  });
-
-  
-  function scrollTo(targetId){
-    const target = $(targetId).position().top;
-    $('html, body').animate(
-      {
-        scrollTop: target - 110
-      },
-      900
-    );
-  }
-
-    
-  </script>
+</script>
 </html>

@@ -1,4 +1,4 @@
-Live version of this website can be found at 
+Angular 6 template
 
 Author: Alejandro Rios
 

@@ -23,6 +23,7 @@
   <meta name="og:url"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -36,6 +37,22 @@
 </body>
 
 <script>
+  var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
   //sticky header with responsive background
   var $header = $('.header-fixed'),
       $headerTop = $header.offset().top,
@@ -50,14 +67,12 @@
     }
     else {
       if(window.location.pathname != '/contact'){
-        console.log('removing sticky');
         $header.removeClass('sticky-header');
       }
     }
   });
   
   $( document ).ready(function() {
-    console.log(window.location.pathname);
     if(window.location.pathname === '/contact'){
       $header.addClass('sticky-header');
     }
@@ -81,6 +96,9 @@
   $('#portfolioLink').on('click', function() {
     scrollTo('#portfolio');
   });
+  $('#pLink2').on('click', function() {
+    scrollTo('#portfolio');
+  });
   $('#servicesLink').on('click', function() {
     scrollTo('#services');
   });
@@ -95,6 +113,9 @@
   });
   $('#footerPortfolioLink').on('click', function() {
     scrollTo('#portfolio');
+  });
+  $('#startButton').on('click', function() {
+    $header.addClass('sticky-header');
   });
 
   
